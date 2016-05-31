@@ -1,0 +1,86 @@
+[
+  {
+    "name": "redis-01",
+    "hostname": "redis-01.net",
+    "box": "debian/jessie64",
+    "ram": 128,
+    "vcpu": 1,
+    "ssh_guest_port": 7011,
+    "private_ip_addr": "192.168.70.11",
+    "scripts": [
+      [
+        "setup.sh", []
+      ]
+    ]
+  },
+  {
+    "name": "redis-02",
+    "hostname": "redis-02.net",
+    "box": "debian/jessie64",
+    "ram": 128,
+    "vcpu": 1,
+    "ssh_guest_port": 7012,
+    "private_ip_addr": "192.168.70.12",
+    "scripts": [
+      [
+        "setup.sh", []
+      ]
+    ]
+  },
+  {
+    "name": "redis-03",
+    "hostname": "redis-03.net",
+    "box": "debian/jessie64",
+    "ram": 128,
+    "vcpu": 1,
+    "ssh_guest_port": 7013,
+    "private_ip_addr": "192.168.70.13",
+    "scripts": [
+      [
+        "setup.sh", []
+      ]
+    ]
+  },
+  {
+    "name": "redis-04",
+    "hostname": "redis-04.net",
+    "box": "debian/jessie64",
+    "ram": 128,
+    "vcpu": 1,
+    "ssh_guest_port": 7014,
+    "private_ip_addr": "192.168.70.14",
+    "scripts": [
+      [
+        "setup.sh", []
+      ]
+    ]
+  },
+  {
+    "name": "redis-05",
+    "hostname": "redis-05.net",
+    "box": "debian/jessie64",
+    "ram": 128,
+    "vcpu": 1,
+    "ssh_guest_port": 7015,
+    "private_ip_addr": "192.168.70.15",
+    "scripts": [
+      [
+        "setup.sh", []
+      ]
+    ]
+  },
+  {
+    "name": "redis-06",
+    "hostname": "redis-06.net",
+    "box": "debian/jessie64",
+    "ram": 128,
+    "vcpu": 1,
+    "ssh_guest_port": 7016,
+    "private_ip_addr": "192.168.70.16",
+    "scripts": [
+      [
+        "setup.sh", []
+      ]
+    ]
+  }
+]
