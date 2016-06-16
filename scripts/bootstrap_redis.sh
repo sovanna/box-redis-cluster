@@ -2,10 +2,13 @@
 
 source "_lib.sh"
 
-log "Install redis"
+log "--- Start: Install redis ---"
 
 if [[ ! -e /usr/local/bin/redis-server ]]; then
-  wget http://download.redis.io/redis-stable.tar.gz
+
+  if [[ ! -f /vagrant/scripts/redis-stable.tar.gz ]]; then
+    wget http://download.redis.io/redis-stable.tar.gz
+  fi
 
   tar xvzf redis-stable.tar.gz
   cd redis-stable
@@ -15,7 +18,7 @@ if [[ ! -e /usr/local/bin/redis-server ]]; then
 
   cd ../
 
-  # rm -rf redis-stable
+  rm -rf redis-stable
   rm -f redis-stable.tar.gz
 
   mkdir -p /etc/redis/
@@ -23,3 +26,5 @@ if [[ ! -e /usr/local/bin/redis-server ]]; then
 fi
 
 cp /vagrant/scripts/conf/redis.conf /etc/redis/6379.conf
+
+log "--- End: Install redis ---"

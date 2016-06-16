@@ -11,15 +11,12 @@ log "Update"
 apt-get update
 
 # Install default
-. bootstrap.sh
-
-log "Cleanup"
-apt-get autoremove -y
+source bootstrap.sh
 
 # Install Redis instance
-. bootstrap_redis.sh
+source bootstrap_redis.sh
 
 # Install Supervisor
-. bootstrap_supervisor.sh
+source bootstrap_supervisor.sh
 
 log "Setup complete!"

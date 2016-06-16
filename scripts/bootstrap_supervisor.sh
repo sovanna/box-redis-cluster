@@ -2,7 +2,7 @@
 
 source "_lib.sh"
 
-log "Install supervisor"
+log "--- Start: Install supervisor ---"
 
 package supervisor
 
@@ -17,3 +17,5 @@ fi
 # Restart Supervisor
 service supervisor stop
 service supervisor start
+
+log "--- End: Install supervisor ---"
